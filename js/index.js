@@ -73,28 +73,33 @@ $carousel.on( 'select.flickity', function() {
   if (playlistTitle === 'Yemobi Q1 18'){
     console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'winter');
+    $("h3").html("winter");
 
 }
     else if (playlistTitle === 'Yemobi Q4 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'autum');
+    $("h3").html("autum");
 }
 
 
     else if (playlistTitle === 'Yemobi Q3 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'summer');
+    $("h3").html("summer");
 }
 
     else if (playlistTitle === 'Yemobi Q2 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'spring');
+    $("h3").html("spring");
 }
 
 
     else if (playlistTitle === 'Yemobi Q1 17'){
       console.log(playlistTitle);
-    $('.playlist-page > div').attr('class', 'autum');
+    $('.playlist-page > div').attr('class', 'winter');
+    $("h3").html("autum");
 }
 
 
