@@ -320,6 +320,17 @@ iframe {
 /*Fix Main carocel in place*/
 
 
+@media only screen and (min-width: 360px) and (max-width: 400px) { 
+
+
+
+
+
+}
+
+
+
+
 /*Tablet Mode*/
 
 @media only screen 
