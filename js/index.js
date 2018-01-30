@@ -29,8 +29,14 @@
 
 
 $('.listen-now').on('click', function() {
+  $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
   $('.playlist-page').toggleClass('active');
   $('.playlist-page > div').attr('class', 'winter');
+  var playlistTitle = $(flkty.selectedElement).find('iframe').data('title');
+  // set Playlist title caption using  The text
+  $('.playlist-title').text(playlistTitle);
+
+
 });
 
 $('.home').on('click', function() {
@@ -63,6 +69,7 @@ var $carousel = $('.main-carousel').flickity({
 var flkty = $carousel.data('flickity');
 
 $carousel.on( 'select.flickity', function() {
+
   var playlistTitle = $(flkty.selectedElement).find('iframe').data('title');
   // set Playlist title caption using  The text
   $('.playlist-title').text(playlistTitle);
@@ -73,33 +80,33 @@ $carousel.on( 'select.flickity', function() {
   if (playlistTitle === 'Yemobi Q1 18'){
     console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'winter');
-    $("h3").html("winter");
+    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
 
 }
     else if (playlistTitle === 'Yemobi Q4 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'autum');
-    $("h3").html("autum");
+    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
 }
 
 
     else if (playlistTitle === 'Yemobi Q3 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'summer');
-    $("h3").html("summer");
+    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
 }
 
     else if (playlistTitle === 'Yemobi Q2 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'spring');
-    $("h3").html("spring");
+    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
 }
 
 
     else if (playlistTitle === 'Yemobi Q1 17'){
       console.log(playlistTitle);
-    $('.playlist-page > div').attr('class', 'winter');
-    $("h3").html("autum");
+    $('.playlist-page > div').attr('class', 'winter2');
+    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
 }
 
 

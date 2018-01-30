@@ -189,22 +189,31 @@ background-image: url(../images/winter.jpg)
 
 .winter {
 /*position: fixed;*/
-background:
+
 height: 100vh;
 background-image: url(../images/winter.jpg)
 
 }
 
+.winter2 {
+/*position: fixed;*/
+
+height: 100vh;
+background-image: url(../images/winter2.jpg)
+
+}
+
 .spring {
 height: 100vh;
-/*background-image: url(../images/spring.jpg)*/
-background-color: green;
+background-image: url(../images/spring.jpg)
+
 
   
 }
 
 .summer {
 height: 100vh;
+background: cover;
 background-image: url(../images/summer.jpg)
 
   
@@ -212,8 +221,9 @@ background-image: url(../images/summer.jpg)
 
 .autum {
 height: 100vh;
+background: cover;
 background-image: url(../images/autum.jpg)
-
+/*background: cover;*/
 }
 
 
@@ -309,12 +319,12 @@ iframe {
   height: 450px;
 }
 
-.flickity-prev-next-button.next{
+/*.flickity-prev-next-button.next{
 
    right: 0px;
 }
 
-
+*/
 
 
 /*Fix Main carocel in place*/
@@ -322,6 +332,10 @@ iframe {
 
 @media only screen and (min-width: 360px) and (max-width: 400px) { 
 
+.flickity-prev-next-button.next{
+
+   left: 308px;
+}
 
 
 
@@ -393,23 +407,33 @@ iframe {
   .homepage-text,
   .logo-text,
   .logo-image { 
-
-  font-size: 2.5rem;
+    width: 1000px;
+    margin: 0 auto;
+  font-size: 2rem;
 
  }
 
 
 img{ 
-  height: 600px;
+  height: 500px;
  }
 
 
 .playlist-title{
 
-  top: 110px;
-  left:30px;
+  top: 75px;
+  left:687px;
+  font-size: 2rem;
 }
 
+
+h3{
+
+  position: absolute;
+  top: 133px;
+  font-size: 1rem;
+  left: 532px;
+}
 
 .flickity-viewport{
 height: 700px !important;
@@ -418,8 +442,9 @@ height: 700px !important;
 
 
 iframe {
-  height: 700px;
-  width: 625px;
+  height: 650px;
+  width: 700px;
+  margin-left: 106px;
   
  
 }
@@ -431,7 +456,7 @@ iframe {
  }
 
 
-.flickity-prev-next-button.next{
+/*.flickity-prev-next-button.next{
 
    right: 75px;
 }
@@ -440,7 +465,7 @@ iframe {
 .flickity-prev-next-button.previous{
 
   left: -10px;
-}
+}*/
 
 
 }
