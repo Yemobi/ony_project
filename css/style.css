@@ -222,8 +222,20 @@ background-image: url(../images/autum.jpg)
 
   position: absolute;
   top: 75px;
+  padding-left: 20px;
 
 }
+
+
+h3{
+
+  position: absolute;
+  top: 133px;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+
 
 /*Toggle Playlist css*/
 
@@ -246,7 +258,7 @@ margin: 66px auto 20px ;
 
 .main-carousel { 
 
-  margin-top: 50px;
+  margin-top: 110px;
 
  }
 
@@ -299,7 +311,7 @@ iframe {
 
 .flickity-prev-next-button.next{
 
-   right: 22px;
+   right: 0px;
 }
 
 
