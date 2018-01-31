@@ -58,7 +58,8 @@ $('.main-carousel').flickity({
   // options
   cellAlign: 'center',
   // contain: true
-  wrapAround: true
+  wrapAround: true,
+  freeScroll: true
   // setGallerySize: false
 });
 
