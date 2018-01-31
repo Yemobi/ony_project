@@ -42,6 +42,9 @@ $('.listen-now').on('click', function() {
 $('.home').on('click', function() {
   $('.playlist-page').removeClass('active');
   $('.responsive-menu').removeClass('expand')
+$('.logo-click').removeClass('expand')
+
+  
  console.log(expand);
 });
 
