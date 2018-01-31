@@ -42,9 +42,12 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background: #fff;
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: auto;
-  background-image: url('../images/background2.jpg');
+/*  background-image: url('../images/background2.jpg');*/
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
     background-position: cover; 
@@ -67,7 +70,12 @@ body {
 header { 
 position: relative;
 z-index: 100;
-background: rgba(0,0,0,1); 
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #000000, #301E3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000000, #301E3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 height: 70px;
 width: 100%;
  }
@@ -180,6 +188,55 @@ height: 340px;
  }
 
 
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
 
 .listen-now {
   margin: 11px auto 0;
@@ -187,7 +244,14 @@ height: 340px;
   text-align: center;
   width:215px;
   border-radius: 32px;
-  background-color: #21D05F
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #000000, #301E3F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #000000, #301E3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   animation: breathing 5s ease-out infinite normal;
+ -webkit-animation: breathing 5s ease-out infinite normal;
+
+
+
 }
 
 
@@ -268,7 +332,7 @@ background-image: url(../images/autum.jpg)
 
   position: absolute;
   top: 75px;
-  padding-left: 20px;
+  padding-left: 108px;
 
 }
 
@@ -279,6 +343,8 @@ h3{
   top: 133px;
   font-size: 1rem;
   padding-left: 20px;
+  text-align: center;
+
 }
 
 
