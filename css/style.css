@@ -105,14 +105,43 @@ a {
   color: white;
 }
 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 
-/******************************************
-/* HOMEPAGE
-/*******************************************/
+.hlogo{
+  height: 50px;
+  width: 50px;
+   animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+}
+
+header .hlogo-container {
+  float: left;
+  margin-top: -15px;
+  height: 70px;
+  width: 300px;
+}
+
+.logo{
+display: inline;
+
+}
+
 
 header .logo {
-  float: left;
+  position: absolute;
+  top: 16px;
+  left: 76px;
 }
 
 header ul {
@@ -120,6 +149,13 @@ float: right;
 text-align: right;
  
 }
+
+
+/******************************************
+/* HOMEPAGE
+/*******************************************/
+
+
 
 
 
@@ -486,6 +522,13 @@ iframe {
   and (-webkit-min-device-pixel-ratio: 1) { 
 
 
+
+
+
+
+
+
+
   .homepage-text,
   .logo-text,
   .logo-image { 
@@ -548,7 +591,6 @@ iframe {
 
   left: -10px;
 }*/
-
 
 }
 
