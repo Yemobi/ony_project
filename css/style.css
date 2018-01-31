@@ -202,9 +202,9 @@ height: 340px;
   }
 
   60% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   100% {
@@ -226,8 +226,8 @@ height: 340px;
   }
 
   60% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   100% {
