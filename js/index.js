@@ -85,33 +85,33 @@ $carousel.on( 'select.flickity', function() {
   if (playlistTitle === 'Yemobi Q1 18'){
     console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'winter');
-    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+    $("h3").html("2018 has been a great start for music. Heavy bass slow jams and smooth sounds!");
 
 }
     else if (playlistTitle === 'Yemobi Q4 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'autum');
-    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+    $("h3").html("The end of 2017 theses tracks will keep you going when the nights get longer!");
 }
 
 
     else if (playlistTitle === 'Yemobi Q3 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'summer');
-    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+    $("h3").html("Call it Summer, call it Autum….. what ever you call it, these tracks are pure Fire!");
 }
 
     else if (playlistTitle === 'Yemobi Q2 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'spring');
-    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+    $("h3").html("Where were you when you first heard XO TOUR Llif3 and Unforgetable! Q217 baby!");
 }
 
 
     else if (playlistTitle === 'Yemobi Q1 17'){
       console.log(playlistTitle);
     $('.playlist-page > div').attr('class', 'winter2');
-    $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+    $("h3").html("Remember when Migos, Childish & Gucci were in the heads of many last year… We old!");
 }
 
 
