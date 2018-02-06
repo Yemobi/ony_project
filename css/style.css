@@ -290,40 +290,61 @@ background-image: url(../images/winter.jpg)
 .winter {
 /*position: fixed;*/
 
-height: 100vh;
-background-image: url(../images/winter.jpg)
+
+background-image: url(../images/winter.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
 
 }
 
 .winter2 {
 /*position: fixed;*/
 
-height: 100vh;
-background-image: url(../images/winter2.jpg)
 
+background-image: url(../images/winter2.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  
 }
 
 .spring {
-height: 100vh;
-background-image: url(../images/spring.jpg)
 
+background-image: url(../images/spring.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
 
   
 }
 
 .summer {
-height: 100vh;
-background: cover;
-background-image: url(../images/summer.jpg)
 
+background: cover;
+background-image: url(../images/summer.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
   
 }
 
 .autum {
-height: 100vh;
+
 background: cover;
-background-image: url(../images/autum.jpg)
-/*background: cover;*/
+background-image: url(../images/autum.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
 }
 
 
@@ -332,7 +353,7 @@ background-image: url(../images/autum.jpg)
 
   position: absolute;
   top: 75px;
-  padding-left: 108px;
+  left: 119px;
 
 }
 
@@ -381,20 +402,6 @@ margin: 66px auto 20px ;
 }
 
 
-/*Arrow button customisation Slick */
-
-/*.slick-prev:before{
-  content: "<-------";
-  color: red;
-  font-size: 30px;
-}*/
-
-
-/*.slick-next:before {
-  content: "---->";
-  color: blue;
-  font-size: 30px;
-}*/
 
 
 
@@ -569,7 +576,7 @@ height: 700px !important;
 
 iframe {
   height: 700px;
-  width: 625px;
+  width: 600px;
   
  
 }
@@ -616,7 +623,7 @@ img{
 .playlist-title{
 
   top: 75px;
-  left:687px;
+  left:768px;
   font-size: 2rem;
 }
 
@@ -626,7 +633,7 @@ h3{
   position: absolute;
   top: 133px;
   font-size: 1rem;
-  left: 532px;
+  left: 573px;
 }
 
 .flickity-viewport{
@@ -637,7 +644,7 @@ height: 700px !important;
 
 iframe {
   height: 650px;
-  width: 700px;
+  width: 625px;
   margin-left: 106px;
   
  
@@ -650,16 +657,12 @@ iframe {
  }
 
 
-/*.flickity-prev-next-button.next{
+.flickity-prev-next-button.next{
 
-   right: 75px;
+   right: -55px;
 }
 
 
-.flickity-prev-next-button.previous{
-
-  left: -10px;
-}*/
 
 }
 

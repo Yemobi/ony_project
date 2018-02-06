@@ -6,30 +6,24 @@
 
 
  $("document").ready( function () {
-        // alert("Hello, world");
-
-		// $('.playlists').slick({
- 	// 	    infinite: true,
-  // 			slidesToShow: 3,
-  // 			slidesToScroll: 3
-  // 			// arrows: true
-
- 	// 		 });
 
 
 
-  jQuery(function($){
-           $('.menu-btn' ).click(function(){
-           $('.responsive-menu').toggleClass('expand')
-           
-           })
-        })
+ $('.menu-btn' ).click(function(){
+    $('.responsive-menu').toggleClass('expand');
+  });
+
+ $('body').on('click', function(event) {
+  if ($('.responsive-menu').hasClass('expand') && !$(event.target).hasClass('fa-bars')) {
+    $('.responsive-menu').removeClass('expand');
+  }
+ });
 
 
 
 
 $('.listen-now').on('click', function() {
-  $("h3").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+  $("h3").html("2018 has been a great start for music. Heavy bass slow jams and smooth sounds!");
   $('.playlist-page').toggleClass('active');
   $('.playlist-page > div').attr('class', 'winter');
   var playlistTitle = $(flkty.selectedElement).find('iframe').data('title');
@@ -39,11 +33,19 @@ $('.listen-now').on('click', function() {
 
 });
 
+
+
 $('.logo-click').on('click', function() {
-  $('.playlist-page').removeClass('active');
-  $('.responsive-menu').removeClass('expand')
- 
+  console.log('clicked!');
+   $("h3").html("2018 has been a great start for music. Heavy bass slow jams and smooth sounds!");
+  $('.playlist-page').toggleClass('active');
+  $('.playlist-page > div').attr('class', 'winter');
+  var playlistTitle = $(flkty.selectedElement).find('iframe').data('title');
+  // set Playlist title caption using  The text
+  $('.playlist-title').text(playlistTitle); 
 });
+
+
 
 
 $('.home').on('click', function() {
@@ -115,100 +117,8 @@ $carousel.on( 'select.flickity', function() {
 }
 
 
-//     else  if (playlistTitle === 'Yemobi Q3 17'){
-//     $('.playlist-page').attr('class', 'summer')
-// }
-
-//     else  if (playlistTitle === 'Yemobi Q2 17'){
-//     $('.playlist-page').attr('class', 'spring')
-// }
-
-//     else  if (playlistTitle === 'Yemobi Q1 17'){
-//     $('.playlist-page').attr('class', 'winter')
-// }
-  // if playlistTitle is equal to a certain value
-    // use .attr() jQuery method to change class of body
-    // to correct class
-
-    
-    
-
-
 });
 
-
-//      $("select.flickity").click(changeImage);
-
-//          function changeImage() {
-//             event.preventDefault();
-
-// if .text(playlistTitle === "Yemobi Q1 18" ) {
-//                 $("body").removeClass();
-//                 $("body").addClass("winter");
-//             }
-
-
-
-    //         if .text(playlistTitle === "NYC" || playlistTitle === "New York" || playlistTitle === "New York playlistTitle") {
-    //             $("body").removeClass();
-    //             $("body").addClass("nyc");
-    //         }
-
-    //         else if .text(playlistTitle === "San Francisco" || playlistTitle === "SF" || playlistTitle === "Bay Area") {
-    //             $("body").removeClass();
-    //             $("body").addClass("sf");
-    //         }
-
-    //        else if (playlistTitle === "Los Angeles" || playlistTitle === "LA" || playlistTitle === "LAX") {
-    //             $("body").removeClass();
-    //             $("body").addClass("la");
-    //         }
-
-    //         else if (playlistTitle === "Austin" || playlistTitle === "ATX") {
-    //             $("body").removeClass();
-    //             $("body").addClass("austin");
-    //         }
-
-    //         else if (playlistTitle === "Sydney" || playlistTitle === "SYD") {
-    //             $("body").removeClass();
-    //             $("body").addClass("sydney");
-    //         }
-    //     }
-      
-    // }
-
-
-
-
-
-
-
-
-
-
-
-//  $('.playlists').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: true,
-//   fade: true,
-//   asNavFor: '.s-playlist'
-// });
-
-// $('.s-playlist').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   // asNavFor: '.playlists',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true,
-// });
-
-// set html data attributes with url for embed code
-// on gallery item click
-  // prevent gallery scroll
-  // grab url from the gallery item's data attribute
-  // update main iframe with selected url
 
 }); 
 
